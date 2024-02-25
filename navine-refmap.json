@@ -1,0 +1,82 @@
+{
+  "mappings": {
+    "de/Jakob/navine/mixins/CameraMixin": {
+      "Lnet/minecraft/client/render/Camera;setPos(DDD)V": "Lnet/minecraft/class_4184;method_19327(DDD)V",
+      "update": "Lnet/minecraft/class_4184;method_19321(Lnet/minecraft/class_1922;Lnet/minecraft/class_1297;ZZF)V"
+    },
+    "de/Jakob/navine/mixins/ChatScreenMixin": {
+      "Lnet/minecraft/client/gui/screen/ChatScreen;normalize(Ljava/lang/String;)Ljava/lang/String;": "Lnet/minecraft/class_408;method_44054(Ljava/lang/String;)Ljava/lang/String;",
+      "sendMessage": "Lnet/minecraft/class_408;method_44056(Ljava/lang/String;Z)Z"
+    },
+    "de/Jakob/navine/mixins/EntityRendererMixin": {
+      "renderLabelIfPresent": "Lnet/minecraft/class_897;method_3926(Lnet/minecraft/class_1297;Lnet/minecraft/class_2561;Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;I)V"
+    },
+    "de/Jakob/navine/mixins/HeldItemRendererMixin": {
+      "renderItem(FLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;Lnet/minecraft/client/network/ClientPlayerEntity;I)V": "Lnet/minecraft/class_759;method_22976(FLnet/minecraft/class_4587;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_746;I)V"
+    },
+    "de/Jakob/navine/mixins/KeyboardInputMixin": {
+      "tick": "Lnet/minecraft/class_743;method_3129(ZF)V"
+    },
+    "de/Jakob/navine/mixins/MixinPlayerEntity": {
+      "Lnet/minecraft/entity/player/PlayerEntity;isSpectator()Z": "Lnet/minecraft/class_1657;method_7325()Z",
+      "Lnet/minecraft/entity/player/PlayerEntity;setMovementSpeed(F)V": "Lnet/minecraft/class_1657;method_6125(F)V",
+      "Lnet/minecraft/entity/player/PlayerEntity;strideDistance:F": "Lnet/minecraft/class_1657;field_7483:F",
+      "getHurtSound": "Lnet/minecraft/class_1657;method_6011(Lnet/minecraft/class_1282;)Lnet/minecraft/class_3414;",
+      "tickMovement": "Lnet/minecraft/class_1657;method_6007()V"
+    },
+    "de/Jakob/navine/mixins/PlayerListEntryMixin": {
+      "getSkinTextures": "Lnet/minecraft/class_640;method_52810()Lnet/minecraft/class_8685;"
+    },
+    "de/Jakob/navine/mixins/SoundSystemMixin": {
+      "getAdjustedPitch": "Lnet/minecraft/class_1140;method_4849(Lnet/minecraft/class_1113;)F"
+    },
+    "de/Jakob/navine/mixins/TitleScreenMixin": {
+      "init": "Lnet/minecraft/class_442;method_25426()V"
+    },
+    "de/Jakob/navine/mixins/TntEntityRendererMixin": {
+      "Lnet/minecraft/client/render/entity/EntityRenderer;render(Lnet/minecraft/entity/Entity;FFLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;I)V": "Lnet/minecraft/class_897;method_3936(Lnet/minecraft/class_1297;FFLnet/minecraft/class_4587;Lnet/minecraft/class_4597;I)V",
+      "render(Lnet/minecraft/entity/TntEntity;FFLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;I)V": "Lnet/minecraft/class_956;method_4135(Lnet/minecraft/class_1541;FFLnet/minecraft/class_4587;Lnet/minecraft/class_4597;I)V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "de/Jakob/navine/mixins/CameraMixin": {
+        "Lnet/minecraft/client/render/Camera;setPos(DDD)V": "Lnet/minecraft/class_4184;method_19327(DDD)V",
+        "update": "Lnet/minecraft/class_4184;method_19321(Lnet/minecraft/class_1922;Lnet/minecraft/class_1297;ZZF)V"
+      },
+      "de/Jakob/navine/mixins/ChatScreenMixin": {
+        "Lnet/minecraft/client/gui/screen/ChatScreen;normalize(Ljava/lang/String;)Ljava/lang/String;": "Lnet/minecraft/class_408;method_44054(Ljava/lang/String;)Ljava/lang/String;",
+        "sendMessage": "Lnet/minecraft/class_408;method_44056(Ljava/lang/String;Z)Z"
+      },
+      "de/Jakob/navine/mixins/EntityRendererMixin": {
+        "renderLabelIfPresent": "Lnet/minecraft/class_897;method_3926(Lnet/minecraft/class_1297;Lnet/minecraft/class_2561;Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;I)V"
+      },
+      "de/Jakob/navine/mixins/HeldItemRendererMixin": {
+        "renderItem(FLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider$Immediate;Lnet/minecraft/client/network/ClientPlayerEntity;I)V": "Lnet/minecraft/class_759;method_22976(FLnet/minecraft/class_4587;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_746;I)V"
+      },
+      "de/Jakob/navine/mixins/KeyboardInputMixin": {
+        "tick": "Lnet/minecraft/class_743;method_3129(ZF)V"
+      },
+      "de/Jakob/navine/mixins/MixinPlayerEntity": {
+        "Lnet/minecraft/entity/player/PlayerEntity;isSpectator()Z": "Lnet/minecraft/class_1657;method_7325()Z",
+        "Lnet/minecraft/entity/player/PlayerEntity;setMovementSpeed(F)V": "Lnet/minecraft/class_1657;method_6125(F)V",
+        "Lnet/minecraft/entity/player/PlayerEntity;strideDistance:F": "Lnet/minecraft/class_1657;field_7483:F",
+        "getHurtSound": "Lnet/minecraft/class_1657;method_6011(Lnet/minecraft/class_1282;)Lnet/minecraft/class_3414;",
+        "tickMovement": "Lnet/minecraft/class_1657;method_6007()V"
+      },
+      "de/Jakob/navine/mixins/PlayerListEntryMixin": {
+        "getSkinTextures": "Lnet/minecraft/class_640;method_52810()Lnet/minecraft/class_8685;"
+      },
+      "de/Jakob/navine/mixins/SoundSystemMixin": {
+        "getAdjustedPitch": "Lnet/minecraft/class_1140;method_4849(Lnet/minecraft/class_1113;)F"
+      },
+      "de/Jakob/navine/mixins/TitleScreenMixin": {
+        "init": "Lnet/minecraft/class_442;method_25426()V"
+      },
+      "de/Jakob/navine/mixins/TntEntityRendererMixin": {
+        "Lnet/minecraft/client/render/entity/EntityRenderer;render(Lnet/minecraft/entity/Entity;FFLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;I)V": "Lnet/minecraft/class_897;method_3936(Lnet/minecraft/class_1297;FFLnet/minecraft/class_4587;Lnet/minecraft/class_4597;I)V",
+        "render(Lnet/minecraft/entity/TntEntity;FFLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;I)V": "Lnet/minecraft/class_956;method_4135(Lnet/minecraft/class_1541;FFLnet/minecraft/class_4587;Lnet/minecraft/class_4597;I)V"
+      }
+    }
+  }
+}
